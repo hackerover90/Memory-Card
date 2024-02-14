@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Avatar_Airbender;
+  src: url('./assets/Avatar_Airbender.ttf');
+}
+
+@font-face {
+  font-family: Herculanum-Roman;
+  src: url('./assets/Herculanum-Roman.ttf');
+}
+
+@font-face {
+  font-family: HerculanumLTStd;
+  src: url('./assets/HerculanumLTStd.otf');
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: Avatar_Airbender, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  min-width: 100vw;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  font-family: Avatar_Airbender;
+  font-size: 4rem;
+}
+
+#instructions {
+  font-family: Herculanum-Roman;
+  font-size: 1.5rem;
+}
