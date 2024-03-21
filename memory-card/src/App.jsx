@@ -6,11 +6,14 @@ import Card from './Card'
 function App() {
   const [score, setScore] = useState(0)
   const [highScore, setHighScore] = useState(0)
+  //const [firstRender, setFirstRender] = useState(true)
 
   function increaseScore() {
     setScore(score + 1)
   }
-
+  //create arr of card obj with all card attributes and assign
+  //each card below a random index in card arr
+  //reset score function
   return (
     <>
       <div id='header'>
