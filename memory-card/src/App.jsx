@@ -77,22 +77,23 @@ function App() {
     }
   }
 
+
   //create arr of card obj with all card attributes and assign
   //each card below a random index in card arr
 
   let cards = [
-    {id: '5cf5679a915ecad153ab68c9', name: 'Aang', clicked: AangClicked}, 
-    {id: '5cf5679a915ecad153ab6992', name: 'Katara', clicked: KataraClicked},
-    {id: '5cf5679a915ecad153ab6a70', name: 'Toph', clicked: TophClicked},
-    {id: '5cf5679a915ecad153ab68da', name: 'Azula', clicked: AzulaClicked},
-    {id: '5cf5679a915ecad153ab6ab8', name: 'Zuko', clicked: ZukoClicked},
-    {id: '5cf5679a915ecad153ab6a45', name: 'Sokka', clicked: SokkaClicked},
-    {id: '5cf5679a915ecad153ab6a7a', name: 'Ty Lee', clicked: TyClicked},
-    {id: '5cf5679a915ecad153ab6976', name: 'Iroh', clicked: IrohClicked},
-    {id: '5cf5679a915ecad153ab6a54', name: 'Suki', clicked: SukiClicked},
-    {id: '5cf5679a915ecad153ab68d4', name: 'Appa', clicked: AppaClicked},
-    {id: '5cf5679a915ecad153ab69fe', name: 'Ozai', clicked: OzaiClicked},
-    {id: '5cf5679a915ecad153ab6a8a', name: 'Wan Shi Tong', clicked: WanClicked}
+    {id: '5cf5679a915ecad153ab68c9', clicked: AangClicked}, 
+    {id: '5cf5679a915ecad153ab6992', clicked: KataraClicked},
+    {id: '5cf5679a915ecad153ab6a70', clicked: TophClicked},
+    {id: '5cf5679a915ecad153ab68da', clicked: AzulaClicked},
+    {id: '5cf5679a915ecad153ab6ab8', clicked: ZukoClicked},
+    {id: '5cf5679a915ecad153ab6a45', clicked: SokkaClicked},
+    {id: '5cf5679a915ecad153ab6a7a', clicked: TyClicked},
+    {id: '5cf5679a915ecad153ab6976', clicked: IrohClicked},
+    {id: '5cf5679a915ecad153ab6a54', clicked: SukiClicked},
+    {id: '5cf5679a915ecad153ab68d4', clicked: AppaClicked},
+    {id: '5cf5679a915ecad153ab69fe', clicked: OzaiClicked},
+    {id: '5cf5679a915ecad153ab6a8a', clicked: WanClicked}
   ]
 
   function shuffle(array) {
@@ -129,29 +130,29 @@ function App() {
       
 
       <div id='card-body'>
-        <Card id={cards[0].id} name={cards[0].name} clicked={cards[0].clicked}
+        <Card id={cards[0].id} clicked={cards[0].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[1].id} name={cards[1].name} clicked={cards[1].clicked}
+        <Card id={cards[1].id} clicked={cards[1].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[2].id} name={cards[2].name} clicked={cards[2].clicked}
+        <Card id={cards[2].id} clicked={cards[2].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[3].id} name={cards[3].name} clicked={cards[3].clicked}
+        <Card id={cards[3].id} clicked={cards[3].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[4].id} name={cards[4].name} clicked={cards[4].clicked}
+        <Card id={cards[4].id} clicked={cards[4].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[5].id} name={cards[5].name} clicked={cards[5].clicked}
+        <Card id={cards[5].id} clicked={cards[5].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[6].id} name={cards[6].name} clicked={cards[6].clicked}
+        <Card id={cards[6].id} clicked={cards[6].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[7].id} name={cards[7].name} clicked={cards[7].clicked}
+        <Card id={cards[7].id} clicked={cards[7].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[8].id} name={cards[8].name} clicked={cards[8].clicked}
+        <Card id={cards[8].id} clicked={cards[8].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[9].id} name={cards[9].name} clicked={cards[9].clicked}
+        <Card id={cards[9].id} clicked={cards[9].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[10].id} name={cards[10].name} clicked={cards[10].clicked}
+        <Card id={cards[10].id} clicked={cards[10].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
-        <Card id={cards[11].id} name={cards[11].name} clicked={cards[11].clicked}
+        <Card id={cards[11].id} clicked={cards[11].clicked}
         handleCLick={handleCLick} increaseScore={increaseScore} resetScore={resetScore}/>
       </div>
 

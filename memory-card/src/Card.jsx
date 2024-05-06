@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { useEffect } from "react"
 
-export default function Card({ id, name, increaseScore, resetScore, clicked, handleCLick }) {
+export default function Card({ id, increaseScore, resetScore, clicked, handleCLick }) {
     const [url, setUrl] = useState('')
+    const [name, setName] = useState('')
     let link = `https://last-airbender-api.fly.dev/api/v1/characters/${id}`
     
     useEffect(() => {
@@ -12,20 +13,12 @@ export default function Card({ id, name, increaseScore, resetScore, clicked, han
         })
         .then(response => {
             setUrl(response.photoUrl)
+            setName(response.name)
         })
         .catch(error => {
             console.log('Error: ', error)
         })
-    }, [link])
-    
-    /*
-    useEffect(() => {
-        if (clicked) {
-            alert('It is clicked')
-        }
-    }, [clicked])
-    */    
-
+    }, [link])  
     
     return (
         
